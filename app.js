@@ -4,10 +4,10 @@ var userObj = [];
 
 
 function setData() {
-  var users = localStorage.getItem("USERDATA") || [];  //get all users from local storage
+  var users = localStorage.getItem("USERDATA") ;//get all users from local storage
   console.log(users); //console show
   console.log(JSON.parse(users)); //convert (string to orginal format)
-  userObj = JSON.parse(users); //convert store in local varaiable
+  userObj = JSON.parse(users)|| []; //convert store in local varaiable
 }
 
 
